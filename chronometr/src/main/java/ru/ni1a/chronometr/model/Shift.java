@@ -12,7 +12,7 @@ public class Shift {
     private Long id;
 
     @ManyToOne
-    @JoinColumn(name = "employee_id", nullable = false) // Связь с работником
+    @JoinColumn(name = "employee_id", nullable = false) // Связь с работником, его ID
     private Employee employee;
 
     @Column(name = "start_time", nullable = false)
